@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Procesori"
+  },
+  {
+    "id": 2,
+    "name": "Maticne ploce"
+  },
+  {
+    "id": 3,
+    "name": "Graficke kartice"
+  },
+  {
+    "id": 4,
+    "name": "RAM memorija"
+  },
+  {
+    "id": 5,
+    "name": "Hard diskovi"
+  }
+]

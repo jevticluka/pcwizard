@@ -1,0 +1,319 @@
+[
+  {
+    "id": 1,
+    "name": "Intel i5 proccessor",
+    "img": {
+      "src": "img/products/i5proc.jpg",
+      "alt": "Intel i5 proccessor"
+    },
+    "category": 1,
+    "brand": 1,
+    "sale": false,
+    "price": {
+      "newPrice": 500,
+      "oldPrice": null
+    },
+    "inStock": true,
+    "availableSizes": ["12th", "13th"],
+    "specs": {
+      "material": "2 godine",
+      "COO": "Germany"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Intel i3 proccessor",
+    "img": {
+      "src": "img/products/i3procesor.png",
+      "alt": "Hoodie image 1"
+    },
+    "category": 1,
+    "brand": 1,
+    "sale": true,
+    "price": {
+      "newPrice": 350,
+      "oldPrice": 399
+    },
+    "inStock": true,
+    "availableSizes": ["6th", "10th", "11th"],
+    "specs": {
+      "material": "2 godine",
+      "COO": "Germany"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Intel i9 proccessor",
+    "img": {
+      "src": "img/products/i9proc.jpg",
+      "alt": "Intel i9 proccessor"
+    },
+    "category": 1,
+    "brand": 1,
+    "sale": false,
+    "price": {
+      "newPrice": 750,
+      "oldPrice": null
+    },
+    "inStock": false,
+    "availableSizes": null,
+    "specs": {
+      "material": "2 godine",
+      "COO": "Italy"
+    }
+  },
+  {
+    "id": 4,
+    "name": "RTX 2060",
+    "img": {
+      "src": "img/products/GFRTX2060.png",
+      "alt": "RTX 2060"
+    },
+    "category": 3,
+    "brand": 2,
+
+    "sale": false,
+    "price": {
+      "newPrice": 400,
+      "oldPrice": 499
+    },
+    "inStock": true,
+    "availableSizes": ["3GB", "6GB", "12GB"],
+    "specs": {
+      "material": "2 godine",
+      "COO": "Italy"
+    }
+  },
+  {
+    "id": 5,
+    "name": "RTX 3060",
+    "img": {
+      "src": "img/products/GFRTX3060.png",
+      "alt": "Male Hoodie image 1"
+    },
+    "category": 3,
+    "brand": 2,
+
+    "sale": false,
+    "price": {
+      "newPrice": 699,
+      "oldPrice": null
+    },
+    "inStock": true,
+    "availableSizes": ["4GB", "6GB"],
+    "specs": {
+      "material": "2 godine",
+      "COO": "UK"
+    }
+  },
+  {
+    "id": 6,
+    "name": "RTX 4080",
+    "img": {
+      "src": "img/products/GFRTX4080.png",
+      "alt": "Male Hoodie image 2"
+    },
+    "category": 3,
+    "brand": 2,
+    "sale": true,
+    "price": {
+      "newPrice": 800,
+      "oldPrice": 999
+    },
+    "inStock": true,
+    "availableSizes": ["4GB", "6GB"],
+    "specs": {
+      "material": "1 godina",
+      "COO": "UK"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Fury 16gb",
+    "img": {
+      "src": "img/products/FURY16GB.png",
+      "alt": "Fury 16gb"
+    },
+    "category": 4,
+    "brand": 3,
+    "sale": false,
+    "price": {
+      "newPrice": 299,
+      "oldPrice": null
+    },
+    "inStock": false,
+    "availableSizes": null,
+    "specs": {
+      "material": "2 godine",
+      "COO": "UK"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Fury 32gb",
+    "img": {
+      "src": "img/products/FURY32GB.jpg",
+      "alt": " Fury 32gb"
+    },
+    "category": 4,
+    "brand": 3,
+    "sale": false,
+    "price": {
+      "newPrice": 399,
+      "oldPrice": null
+    },
+    "inStock": true,
+    "availableSizes": ["32GB"],
+    "specs": {
+      "material": "2 godine",
+      "COO": "UK"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Fury 64gb",
+    "img": {
+      "src": "img/products/FURY64GB.png",
+      "alt": "Fury 64gb"
+    },
+    "category": 4,
+    "brand": 3,
+    "sale": false,
+    "price": {
+      "newPrice": 499,
+      "oldPrice": null
+    },
+    "inStock": true,
+    "availableSizes": ["64GB"],
+    "specs": {
+      "material": "3 godine",
+      "COO": "Germany"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Asus D4",
+    "img": {
+      "src": "img/products/asusD4.png",
+      "alt": "Asus D4"
+    },
+    "category": 2,
+    "brand": 5,
+    "sale": false,
+    "price": {
+      "newPrice": 150,
+      "oldPrice": 200
+    },
+    "inStock": true,
+    "availableSizes": ["D4"],
+    "specs": {
+      "material": "1 godina",
+      "COO": "Italy"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Asus Plus D4",
+    "img": {
+      "src": "img/products/asusPLUS_D4.jpg",
+      "alt": "Asus Plus D4"
+    },
+    "category": 2,
+    "brand": 5,
+    "sale": true,
+    "price": {
+      "newPrice": 300,
+      "oldPrice": 369
+    },
+    "inStock": true,
+    "availableSizes": ["D4 PLUS"],
+    "specs": {
+      "material": "2 godine",
+      "COO": "Germany"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Asus Plus",
+    "img": {
+      "src": "img/products/asusPPLUS.png",
+      "alt": "Asus Plus"
+    },
+    "category": 2,
+    "brand": 5,
+    "sale": false,
+    "price": {
+      "newPrice": 299,
+      "oldPrice": null
+    },
+    "inStock": true,
+    "availableSizes": ["PLUS", "PLUS+"],
+    "specs": {
+      "material": "2 godine",
+      "COO": "Italy"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Western Digital 4tb",
+    "img": {
+      "src": "img/products/WDREDTB4.png",
+      "alt": "Western Digital 4tb"
+    },
+    "category": 5,
+    "brand": 4,
+    "sale": false,
+    "price": {
+      "newPrice": 200,
+      "oldPrice": 269
+    },
+    "inStock": false,
+    "availableSizes": null,
+    "specs": {
+      "material": "3 godine",
+      "COO": "Italy"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Western Digital 6tb",
+    "img": {
+      "src": "img/products/WDREDTB6.png",
+      "alt": "Western Digital 6tb"
+    },
+    "category": 5,
+    "brand": 4,
+    "sale": true,
+    "price": {
+      "newPrice": 300,
+      "oldPrice": 369
+    },
+    "inStock": true,
+    "availableSizes": ["6TB"],
+    "specs": {
+      "material": "2 godine",
+      "COO": "Italy"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Western Digital 14tb",
+    "img": {
+      "src": "img/products/WDREDTB14.png",
+      "alt": "Western Digital 14tb"
+    },
+    "category": 5,
+    "brand": 4,
+    "sale": false,
+    "price": {
+      "newPrice": 469,
+      "oldPrice": null
+    },
+    "inStock": true,
+    "availableSizes": ["14TB"],
+    "specs": {
+      "material": "2 godine",
+      "COO": "Germany"
+    }
+  }
+]
