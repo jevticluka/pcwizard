@@ -16,7 +16,7 @@
     "inStock": true,
     "availableSizes": ["12th", "13th"],
     "specs": {
-      "material": "2 godine",
+      "material": "2 years",
       "COO": "Germany"
     }
   },
@@ -37,7 +37,7 @@
     "inStock": true,
     "availableSizes": ["6th", "10th", "11th"],
     "specs": {
-      "material": "2 godine",
+      "material": "2 years",
       "COO": "Germany"
     }
   },
@@ -58,7 +58,7 @@
     "inStock": false,
     "availableSizes": null,
     "specs": {
-      "material": "2 godine",
+      "material": "2 years",
       "COO": "Italy"
     }
   },
@@ -80,7 +80,7 @@
     "inStock": true,
     "availableSizes": ["3GB", "6GB", "12GB"],
     "specs": {
-      "material": "2 godine",
+      "material": "2 years",
       "COO": "Italy"
     }
   },
@@ -102,7 +102,7 @@
     "inStock": true,
     "availableSizes": ["4GB", "6GB"],
     "specs": {
-      "material": "2 godine",
+      "material": "2 years",
       "COO": "UK"
     }
   },
@@ -144,7 +144,7 @@
     "inStock": false,
     "availableSizes": null,
     "specs": {
-      "material": "2 godine",
+      "material": "2 years",
       "COO": "UK"
     }
   },
@@ -165,7 +165,7 @@
     "inStock": true,
     "availableSizes": ["32GB"],
     "specs": {
-      "material": "2 godine",
+      "material": "2 years",
       "COO": "UK"
     }
   },
@@ -186,7 +186,7 @@
     "inStock": true,
     "availableSizes": ["64GB"],
     "specs": {
-      "material": "3 godine",
+      "material": "3 years",
       "COO": "Germany"
     }
   },
@@ -207,7 +207,7 @@
     "inStock": true,
     "availableSizes": ["D4"],
     "specs": {
-      "material": "1 godina",
+      "material": "1 year",
       "COO": "Italy"
     }
   },
@@ -228,7 +228,7 @@
     "inStock": true,
     "availableSizes": ["D4 PLUS"],
     "specs": {
-      "material": "2 godine",
+      "material": "2 years",
       "COO": "Germany"
     }
   },
@@ -249,7 +249,7 @@
     "inStock": true,
     "availableSizes": ["PLUS", "PLUS+"],
     "specs": {
-      "material": "2 godine",
+      "material": "2 years",
       "COO": "Italy"
     }
   },
@@ -270,7 +270,7 @@
     "inStock": false,
     "availableSizes": null,
     "specs": {
-      "material": "3 godine",
+      "material": "3 years",
       "COO": "Italy"
     }
   },
@@ -291,7 +291,7 @@
     "inStock": true,
     "availableSizes": ["6TB"],
     "specs": {
-      "material": "2 godine",
+      "material": "2 years",
       "COO": "Italy"
     }
   },
@@ -312,7 +312,7 @@
     "inStock": true,
     "availableSizes": ["14TB"],
     "specs": {
-      "material": "2 godine",
+      "material": "2 years",
       "COO": "Germany"
     }
   }

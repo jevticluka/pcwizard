@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
-    "name": "Procesori"
+    "name": "Processor"
   },
   {
     "id": 2,
-    "name": "Maticne ploce"
+    "name": "Motherboard"
   },
   {
     "id": 3,
-    "name": "Graficke kartice"
+    "name": "Graphic card"
   },
   {
     "id": 4,
-    "name": "RAM memorija"
+    "name": "RAM memory"
   },
   {
     "id": 5,
-    "name": "Hard diskovi"
+    "name": "Hard disc"
   }
 ]
