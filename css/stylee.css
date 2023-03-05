@@ -184,12 +184,12 @@ html{
   
   .scrollToTop:hover,
   .scrollToTop:focus {
-    color: #384aeb;
+    color: #c8ff00;
   }
 
   .scrollToTop {
-    background-color: #384aeb;
-    border: 2px solid #384aeb;
+    background-color: #000000;
+    border: 2px solid #ffffff;
 }
 .list a{
     color:#d4d4d4 !important;
@@ -245,7 +245,7 @@ html{
 }
 
 .checkoutProizvodi a:hover{
-    color:#384aeb !important;
+    color:#000000 !important;
     text-decoration: underline;
     text-decoration-style:dashed;
 }
