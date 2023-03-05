@@ -66,7 +66,7 @@ window.onload = function () {
   function prikazKategorija(data) {
     let html = ``;
     data.forEach((kategorija) => {
-      let br = 0;
+      let br = 1-1;
       html += `<li class="filter-list"><input class="pixel-radio pixel-checkbox category" type="checkbox" id="category${kategorija.id}" name="category" value="category${kategorija.id}"><label for="${kategorija.name}"> ${kategorija.name} <span>(`;
       for (var i = 0; i < nizProizvoda.length; i++) {
         if (nizProizvoda[i].category == kategorija.id) {
@@ -113,25 +113,10 @@ window.onload = function () {
     });
     nizBrendova = data;
     $("#brendovi").html(html);
-    dohvatanjePodataka("../data/gender.json", prikazPola);
+    
   }
 
-  function prikazPola(data) {
-    html = ``;
-    data.forEach((pol) => {
-      let br = 0;
-      html += `<li class="filter-list"><input class="pixel-radio pol" type="radio" id="${pol.name}" value="pol${pol.id}" name="gender"><label for="${pol.name}"> ${pol.name} <span>(`;
-      for (var i = 0; i < nizProizvoda.length; i++) {
-        if (nizProizvoda[i].gender == pol.id) {
-          br++;
-        }
-      }
-      html += br;
-      html += `)</span></label></li>`;
-    });
-    nizPolova = data;
-    $("#gender").html(html);
-  }
+
 
   var path = document.location.pathname;
   var broj = path.lastIndexOf("/");
@@ -163,41 +148,11 @@ window.onload = function () {
     });
   }
 
-  function slajder() {
-    if ($(".owl-carousel").length > 0) {
-      $("#bestSellerCarousel").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: true,
-        navText: [
-          "<i class='ti-arrow-left'></i>",
-          "<i class='ti-arrow-right'></i>",
-        ],
-        dots: false,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          900: {
-            items: 3,
-          },
-          1130: {
-            items: 4,
-          },
-        },
-      });
-    }
-  }
+
 
   if (path == "/shop.html") {
     dohvatanjePodataka("../data/proizvodi.json", prikazProizvoda);
     dohvatanjePodataka("../data/categories.json", prikazKategorija);
-    $("#gender").change(() => {
-      dohvatanjePodataka("../data/proizvodi.json", prikazProizvoda);
-    });
     $("#brendovi").change(() => {
       dohvatanjePodataka("../data/proizvodi.json", prikazProizvoda);
     });
@@ -234,8 +189,8 @@ window.onload = function () {
     path == "/single-product.html" ||
     path == "/shop.html" ||
     path == "/checkout.html" ||
-    path == "/login.html" ||
-    path == "/register.html"
+    path == "/" ||
+    path == "/"
   ) {
     dohvatanjePodataka("../data/meni.json", prikazMenija);
   }
@@ -249,13 +204,6 @@ window.onload = function () {
     proveraFormeCheckout();
   }
 
-  if (path == "/login.html") {
-    proveraFormeLogin();
-  }
-
-  if (path == "/register.html") {
-    proveraFormeRegister();
-  }
 
   function prikazProizvoda(data) {
     html = ``;
@@ -419,11 +367,7 @@ window.onload = function () {
             html += `</br>`;
           }
           html += `<h6 class="hidden crveno" id="izaberiVelicinu">SELECT</h6>`;
-          if (niz[i].gender == 1) {
-            // html += `<a class="underlined" href="../img/Size guide for Men.png" target="_blank"><span>Size guide</span></a>`;
-          } else {
-            // html += `<a class="underlined" href="../img/Size guide for Women.png" target="_blank"><span>Size guide</span></a>`;
-          }
+          
           html += `</p>`;
           html += `<div class="product_count">
                                 <label for="qty">Quantity:</label>
@@ -444,7 +388,7 @@ window.onload = function () {
 							<tbody>
 								<tr>
 									<td>
-										<h5>Warrant</h5>
+										<h5>Material</h5>
 									</td>
 									<td>
 										<h5>${niz[i].specs.material}</h5>
@@ -863,33 +807,7 @@ window.onload = function () {
     }
   }
 
-  function ispisPocetnaSlajder(niz) {
-    html = ``;
 
-    for (let i = 0; i < niz.length; i++) {
-      if (niz[i].inStock && niz[i].sale) {
-        html += `<div class="card text-center card-product">
-            <div class="card-product__img">
-                <a href="pages/single-product.html?id=${niz[i].id}">
-                    <img class="img-fluid" src="${niz[i].img.src}" alt="${
-          niz[i].img.alt
-        }"/>
-                </a>
-            </div>
-            <div class="card-body">
-              <p>${kategorijaProizvoda(niz[i].category)}</p>
-              <h4 class="card-product__title"><a href="pages/single-product.html?id=${
-                niz[i].id
-              }">${niz[i].name}</a></h4>
-              <p class="card-product__price">${niz[i].price.newPrice}$</p>
-            </div>
-          </div>`;
-      }
-    }
-
-    $("#bestSellerCarousel").html(html);
-    slajder();
-  }
 
   function proveraFormeContact() {
     let dugme = document.getElementById("form-submit");
@@ -1121,115 +1039,9 @@ window.onload = function () {
     $("#cenaCheckout").html(html);
   }
 
-  function proveraFormeLogin() {
-    let dugme = document.getElementById("btnLogIn");
-    dugme.addEventListener("click", () => {
-      proveriUsername();
-      proveriPassword();
-      if (proveriUsername() && proveriPassword()) {
-        dugme.style.backgroundColor = "green";
-        dugme.style.color = "white";
-        dugme.innerText = "Login successfully";
-      }
-    });
-  }
 
-  function proveriUsername() {
-    let uzorakUsername =
-      /^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/;
-    let username = $("#username").val();
-    if (!uzorakUsername.test(username)) {
-      let poljeUsername = document.getElementById("upozorenjeUsername");
-      if (username == "" || !username.trim())
-        poljeUsername.innerHTML = "Enter username";
-      else poljeUsername.innerHTML = "Invalid username format!";
-      poljeUsername.style.color = "red";
-      poljeUsername.classList.remove("hidden");
-      return false;
-    }
-    if (uzorakUsername.test(username)) {
-      let poljeUsername = document.getElementById("upozorenjeUsername");
-      poljeUsername.classList.add("hidden");
-      return true;
-    }
-  }
 
-  function proveriPassword() {
-    let uzorakPassword = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-    let password = $("#password").val();
-    if (!uzorakPassword.test(password)) {
-      let poljePassword = document.getElementById("upozorenjePassword");
-      if (password == "" || !password.trim())
-        poljePassword.innerHTML = "Enter password";
-      else
-        poljePassword.innerHTML =
-          "Min 8 characters, at least 1 upper case and 1 number!";
-      poljePassword.style.color = "red";
-      poljePassword.classList.remove("hidden");
-      return false;
-    }
-    if (uzorakPassword.test(password)) {
-      let poljePassword = document.getElementById("upozorenjePassword");
-      poljePassword.classList.add("hidden");
-      return true;
-    }
-  }
 
-  function proveriPassword2() {
-    let uzorakPassword = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-    let password = $("#confirmPassword").val();
-    if (!uzorakPassword.test(password)) {
-      let poljePassword = document.getElementById("upozorenjePassword2");
-      if (password == "" || !password.trim())
-        poljePassword.innerHTML = "Re-enter password";
-      else
-        poljePassword.innerHTML =
-          "Min 8 characters, at least 1 upper case and 1 number!";
-      poljePassword.style.color = "red";
-      poljePassword.classList.remove("hidden");
-      return false;
-    }
-    if (uzorakPassword.test(password)) {
-      let poljePassword = document.getElementById("upozorenjePassword2");
-      poljePassword.classList.add("hidden");
-      return true;
-    }
-  }
 
-  function uporediPassword() {
-    let password2 = $("#confirmPassword").val();
-    let password = $("#password").val();
-
-    if (password != password2) {
-      alert("Passwords doesn't match!");
-      return false;
-    } else {
-      return true;
-    }
-  }
-
-  function proveraFormeRegister() {
-    let dugme = document.getElementById("btnRegister");
-    dugme.addEventListener("click", () => {
-      proveriUsername();
-      proveriEmail();
-      proveriPassword();
-      proveriPassword2();
-      if (proveriPassword() && proveriPassword2()) {
-        uporediPassword();
-      }
-
-      if (
-        proveriUsername() &&
-        proveriEmail() &&
-        proveriPassword &&
-        proveriPassword2 &&
-        uporediPassword()
-      ) {
-        dugme.style.color = "white";
-        dugme.style.backgroundColor = "green";
-        dugme.innerText = "Registration successfully";
-      }
-    });
-  }
+  
 };

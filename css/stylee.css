@@ -35,19 +35,6 @@ html{
     color:#777 !important;
 }
 
-.pozadinaLogin{
-    background-image: url("../img/login.jpg");
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-}
-
-.pozadinaRegister{
-    background-image: url("../img/register.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 .pozadinaContact{
     background-image: url("../img/contact.jpg");
@@ -184,12 +171,12 @@ html{
   
   .scrollToTop:hover,
   .scrollToTop:focus {
-    color: #c8ff00;
+    color: #000;
   }
 
   .scrollToTop {
-    background-color: #000000;
-    border: 2px solid #ffffff;
+    background-color: #414651;
+    border: 2px solid #FFF;
 }
 .list a{
     color:#d4d4d4 !important;
@@ -245,7 +232,7 @@ html{
 }
 
 .checkoutProizvodi a:hover{
-    color:#000000 !important;
+    color:#414651 !important;
     text-decoration: underline;
     text-decoration-style:dashed;
 }

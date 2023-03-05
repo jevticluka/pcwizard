@@ -16,7 +16,7 @@
     "inStock": true,
     "availableSizes": ["12th", "13th"],
     "specs": {
-      "material": "2 years",
+      "material": "Metal",
       "COO": "Germany"
     }
   },
@@ -25,7 +25,7 @@
     "name": "Intel i3 proccessor",
     "img": {
       "src": "img/products/i3procesor.png",
-      "alt": "Hoodie image 1"
+      "alt": "Intel i3 proccessor"
     },
     "category": 1,
     "brand": 1,
@@ -37,7 +37,7 @@
     "inStock": true,
     "availableSizes": ["6th", "10th", "11th"],
     "specs": {
-      "material": "2 years",
+      "material": "Metal",
       "COO": "Germany"
     }
   },
@@ -58,7 +58,7 @@
     "inStock": false,
     "availableSizes": null,
     "specs": {
-      "material": "2 years",
+      "material": "Metal",
       "COO": "Italy"
     }
   },
@@ -80,7 +80,7 @@
     "inStock": true,
     "availableSizes": ["3GB", "6GB", "12GB"],
     "specs": {
-      "material": "2 years",
+      "material": "Metal",
       "COO": "Italy"
     }
   },
@@ -89,7 +89,7 @@
     "name": "RTX 3060",
     "img": {
       "src": "img/products/GFRTX3060.png",
-      "alt": "Male Hoodie image 1"
+      "alt": "RTX 3060"
     },
     "category": 3,
     "brand": 2,
@@ -102,7 +102,7 @@
     "inStock": true,
     "availableSizes": ["4GB", "6GB"],
     "specs": {
-      "material": "2 years",
+      "material": "Metal",
       "COO": "UK"
     }
   },
@@ -111,7 +111,7 @@
     "name": "RTX 4080",
     "img": {
       "src": "img/products/GFRTX4080.png",
-      "alt": "Male Hoodie image 2"
+      "alt": "RTX 4080"
     },
     "category": 3,
     "brand": 2,
@@ -123,7 +123,7 @@
     "inStock": true,
     "availableSizes": ["4GB", "6GB"],
     "specs": {
-      "material": "1 godina",
+      "material": "Metal",
       "COO": "UK"
     }
   },
@@ -144,7 +144,7 @@
     "inStock": false,
     "availableSizes": null,
     "specs": {
-      "material": "2 years",
+      "material": "Metal",
       "COO": "UK"
     }
   },
@@ -165,7 +165,7 @@
     "inStock": true,
     "availableSizes": ["32GB"],
     "specs": {
-      "material": "2 years",
+      "material": "Metal",
       "COO": "UK"
     }
   },
@@ -186,7 +186,7 @@
     "inStock": true,
     "availableSizes": ["64GB"],
     "specs": {
-      "material": "3 years",
+      "material": "Metal",
       "COO": "Germany"
     }
   },
@@ -207,7 +207,7 @@
     "inStock": true,
     "availableSizes": ["D4"],
     "specs": {
-      "material": "1 year",
+      "material": "Metal",
       "COO": "Italy"
     }
   },
@@ -228,7 +228,7 @@
     "inStock": true,
     "availableSizes": ["D4 PLUS"],
     "specs": {
-      "material": "2 years",
+      "material": "Metal",
       "COO": "Germany"
     }
   },
@@ -249,7 +249,7 @@
     "inStock": true,
     "availableSizes": ["PLUS", "PLUS+"],
     "specs": {
-      "material": "2 years",
+      "material": "Metal",
       "COO": "Italy"
     }
   },
@@ -270,7 +270,7 @@
     "inStock": false,
     "availableSizes": null,
     "specs": {
-      "material": "3 years",
+      "material": "Metal",
       "COO": "Italy"
     }
   },
@@ -291,7 +291,7 @@
     "inStock": true,
     "availableSizes": ["6TB"],
     "specs": {
-      "material": "2 years",
+      "material": "Metal",
       "COO": "Italy"
     }
   },
@@ -312,7 +312,7 @@
     "inStock": true,
     "availableSizes": ["14TB"],
     "specs": {
-      "material": "2 years",
+      "material": "Metal",
       "COO": "Germany"
     }
   }

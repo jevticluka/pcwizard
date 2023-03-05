@@ -802,7 +802,7 @@ a {
   transform: translateY(0);
 }
 .card-product:hover .card-product__title a {
-  color: #384aeb;
+  color: #414651;
 }
 .offer {
   background: url("../img/home/parallax-bg.png") right center no-repeat;
@@ -849,12 +849,12 @@ a {
 #bestSellerCarousel .owl-next i,
 #bestSellerCarousel .owl-next span {
   font-size: 15px;
-  color: #384aeb;
+  color: #414651;
   line-height: 40px;
 }
 #bestSellerCarousel .owl-prev:hover,
 #bestSellerCarousel .owl-next:hover {
-  background: #384aeb;
+  background: #414651;
 }
 #bestSellerCarousel .owl-prev:hover i,
 #bestSellerCarousel .owl-prev:hover span,
@@ -928,10 +928,10 @@ a {
   transition: all 0.5s ease;
 }
 .card-blog:hover .card-blog__title a {
-  color: #384aeb;
+  color: #414651;
 }
 .card-blog:hover .card-blog__link {
-  color: #384aeb;
+  color: #414651;
 }
 .card-blog:hover .card-blog__link i,
 .card-blog:hover .card-blog__link span {
@@ -967,7 +967,7 @@ a {
   position: absolute;
   top: 50px;
   left: 10px;
-  color: #384aeb;
+  color: #414651;
 }
 .subscribe-form .form-control {
   border-radius: 30px;
@@ -1212,7 +1212,7 @@ a {
   transition: all 0.3s ease 0s;
 }
 .l_blog_item .l_blog_text h4:hover {
-  color: #384aeb;
+  color: #414651;
 }
 .l_blog_item .l_blog_text p {
   margin-bottom: 0px;
@@ -1277,7 +1277,7 @@ a {
   cursor: pointer;
 }
 .causes_item .causes_text h4:hover {
-  color: #384aeb;
+  color: #414651;
 }
 .causes_item .causes_text p {
   font-size: 14px;
@@ -1420,7 +1420,7 @@ a {
   font-size: 14px;
 }
 .blog_info .post_tag a.active {
-  color: #384aeb;
+  color: #414651;
 }
 .blog_info .blog_meta li a {
   color: #777777;
@@ -1438,7 +1438,7 @@ a {
   vertical-align: middle;
 }
 .blog_info .blog_meta li a:hover {
-  color: #384aeb;
+  color: #414651;
 }
 .blog_post img {
   max-width: 100%;
@@ -1454,7 +1454,7 @@ a {
   transition: all 0.3s linear;
 }
 .blog_details h2:hover {
-  color: #384aeb;
+  color: #414651;
 }
 .blog_details p {
   margin-bottom: 26px;
@@ -1553,7 +1553,7 @@ a {
   margin-left: 20px;
 }
 .blog_right_sidebar .author_widget .social_icon a:hover {
-  color: #384aeb;
+  color: #414651;
 }
 .blog_right_sidebar .popular_post_widget .post_item .media-body {
   justify-content: center;
@@ -1568,7 +1568,7 @@ a {
   transition: all 0.3s linear;
 }
 .blog_right_sidebar .popular_post_widget .post_item .media-body h3:hover {
-  color: #384aeb;
+  color: #414651;
 }
 .blog_right_sidebar .popular_post_widget .post_item .media-body p {
   font-size: 12px;
@@ -1595,10 +1595,10 @@ a {
   padding-top: 15px;
 }
 .blog_right_sidebar .post_category_widget .cat-list li:hover {
-  border-color: #384aeb;
+  border-color: #414651;
 }
 .blog_right_sidebar .post_category_widget .cat-list li:hover a {
-  color: #384aeb;
+  color: #414651;
 }
 .blog_right_sidebar .newsletter_widget {
   text-align: center;
@@ -1699,7 +1699,7 @@ a {
   font-weight: 400;
 }
 .blog-pagination .page-item.active .page-link {
-  background-color: #384aeb;
+  background-color: #414651;
   border-color: transparent;
   color: #fff;
 }
@@ -1722,7 +1722,7 @@ a {
 .blog-pagination .page-link:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #384aeb;
+  background-color: #414651;
   border-color: #eee;
 }
 .single-post-area .social-links {
@@ -1914,7 +1914,7 @@ a {
   transition: all 0.3s ease 0s;
 }
 .comments-area .btn-reply:hover {
-  background-color: #384aeb;
+  background-color: #414651;
   color: #fff;
   font-weight: 700;
 }
@@ -2052,7 +2052,7 @@ a {
 }
 .contact-info__icon i,
 .contact-info__icon span {
-  color: #384aeb;
+  color: #414651;
   font-size: 20px;
 }
 .contact-info .media-body h3 {
@@ -2168,7 +2168,7 @@ a {
   border-bottom: 1px solid #eee;
 }
 .sidebar-categories .main-nav-list a:hover {
-  color: #384aeb;
+  color: #414651;
 }
 .sidebar-categories .main-nav-list a .number {
   color: #cccccc;
@@ -2421,7 +2421,7 @@ a {
   font-weight: 400;
 }
 .single-search-product:hover .title {
-  color: #384aeb;
+  color: #414651;
 }
 .order-wrapper {
   background: #f1f6f7;
@@ -2464,7 +2464,7 @@ a {
 }
 .billing-alert {
   font-size: 18px;
-  color: #384aeb;
+  color: #414651;
   margin-bottom: 30px;
 }
 .confirmation-card {
@@ -2610,7 +2610,7 @@ a {
   margin-bottom: 0px;
 }
 .check_title h2 a {
-  color: #384aeb;
+  color: #414651;
   text-decoration: underline;
 }
 .returning_customer p {
@@ -2789,7 +2789,7 @@ a {
   margin-right: 5px;
 }
 .billing_details .contact_form .form-group .creat_account a {
-  color: #384aeb;
+  color: #414651;
 }
 .order_box {
   background: #e8f0f2;
@@ -3056,7 +3056,7 @@ a {
 }
 .order_box .creat_account a {
   font-size: 12px;
-  color: #384aeb;
+  color: #414651;
 }
 .login_box_area .login_box_img {
   height: 350px;
@@ -3627,7 +3627,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #384aeb;
+  color: #414651;
   margin-bottom: 10px;
 }
 .s_product_text .list li {
@@ -3812,7 +3812,7 @@ a {
 .product_description_area .tab-content .total_rate .box_total h4 {
   font-size: 48px;
   font-weight: bold;
-  color: #384aeb;
+  color: #414651;
 }
 .product_description_area .tab-content .total_rate .box_total h5 {
   color: #333333;
@@ -4039,7 +4039,7 @@ a {
   font-family: "Roboto", sans-serif;
 }
 .tp_widgets .list li a:hover {
-  color: #384aeb;
+  color: #414651;
 }
 .tp_widgets .list li:last-child {
   margin-bottom: 0px;
@@ -4079,7 +4079,7 @@ a {
   margin-bottom: 0;
 }
 .footer-bottom .footer-text a {
-  color: #384aeb;
+  color: #414651;
   opacity: 1;
 }
 .footer-only {
