@@ -123,7 +123,6 @@ window.onload = function () {
   if (path == "/index.html" || path == "/") {
     dohvatanjePodataka("data/proizvodi.json", ispisPocetna);
     dohvatanjePodataka("data/meni.json", prikazMenija);
-    // dohvatanjePodataka("data/proizvodi.json", ispisPocetnaSlajder);
     $(".hero-carousel").owlCarousel({
       items: 3,
       margin: 10,
@@ -146,34 +145,6 @@ window.onload = function () {
     });
   }
 
-  // function slajder() {
-  //   if ($(".owl-carousel").length > 0) {
-  //     $("#bestSellerCarousel").owlCarousel({
-  //       loop: true,
-  //       margin: 30,
-  //       nav: true,
-  //       navText: [
-  //         "<i class='ti-arrow-left'></i>",
-  //         "<i class='ti-arrow-right'></i>",
-  //       ],
-  //       dots: false,
-  //       responsive: {
-  //         0: {
-  //           items: 1,
-  //         },
-  //         600: {
-  //           items: 2,
-  //         },
-  //         900: {
-  //           items: 3,
-  //         },
-  //         1130: {
-  //           items: 4,
-  //         },
-  //       },
-  //     });
-  //   }
-  // }
 
   if (path == "/shop.html") {
     dohvatanjePodataka("../data/proizvodi.json", prikazProizvoda);
@@ -589,26 +560,21 @@ window.onload = function () {
   function kategorijaProizvoda(id) {
     switch (id) {
       case 1:
-        return "Procesor";
+        return "Processor";
         break;
       case 2:
-        return "Graficka";
+        return "Graphic card";
         break;
       case 3:
-        return "Maticna ploca";
+        return "Motherboard";
         break;
       case 4:
-        return "";
+        return "RAM memory";
         break;
       case 5:
-        return "Hard disk";
+        return "Hard disc";
         break;
-      case 6:
-        return "";
-        break;
-      case 7:
-        return "";
-        break;
+
     }
   }
 
@@ -816,34 +782,6 @@ window.onload = function () {
       dohvatanjePodataka("../data/proizvodi.json", ispisKorpa);
     }
   }
-
-  // function ispisPocetnaSlajder(niz) {
-  //   html = ``;
-
-  //   for (let i = 0; i < niz.length; i++) {
-  //     if (niz[i].inStock && niz[i].sale) {
-  //       html += `<div class="card text-center card-product">
-  //           <div class="card-product__img">
-  //               <a href="pages/single-product.html?id=${niz[i].id}">
-  //                   <img class="img-fluid" src="${niz[i].img.src}" alt="${
-  //         niz[i].img.alt
-  //       }"/>
-  //               </a>
-  //           </div>
-  //           <div class="card-body">
-  //             <p>${kategorijaProizvoda(niz[i].category)}</p>
-  //             <h4 class="card-product__title"><a href="pages/single-product.html?id=${
-  //               niz[i].id
-  //             }">${niz[i].name}</a></h4>
-  //             <p class="card-product__price">${niz[i].price.newPrice}$</p>
-  //           </div>
-  //         </div>`;
-  //     }
-  //   }
-
-  //   $("#bestSellerCarousel").html(html);
-  //   slajder();
-  // }
 
   function proveraFormeContact() {
     let dugme = document.getElementById("form-submit");
