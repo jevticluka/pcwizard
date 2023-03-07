@@ -57,7 +57,7 @@ window.onload = function () {
         }
       });
     }
-    html += `<li class="nav-item" ><a class="nav-link" href="#" >Author</a></li>`;
+    html += `<li class="nav-item" ><a class="nav-link" href="https://jevticluka.github.io/portfolio/" >Author</a></li>`;
 
     nizMenija = data;
     $("#meni").html(html);
