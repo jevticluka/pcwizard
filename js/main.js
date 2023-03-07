@@ -3,6 +3,7 @@ var nizKategorija = [];
 var nizBrendova = [];
 var nizProizvoda = [];
 
+
 function prikazSocial(polje) {
   let id = polje.getAttribute("data-id");
   let dugme = document.getElementById(id);
@@ -986,7 +987,7 @@ window.onload = function () {
   }
 
   function proveriAdresu() {
-    let uzorakAdrese = /[a-zA-Z0-9\s]+(\.)? [a-zA-Z]+ (\d{1,})/;
+    let uzorakAdrese = /^[a-zA-Z]+\s\d+(\/\d+)?$/;
     let adresa = document.getElementById("address").value;
     if (!uzorakAdrese.test(adresa)) {
       let poljeAdresa = document.getElementById("upozorenjeAdresa");
