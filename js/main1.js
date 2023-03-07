@@ -2,6 +2,7 @@ var nizMenija = [];
 var nizKategorija = [];
 var nizBrendova = [];
 var nizProizvoda = [];
+var nizPolova = [];
 
 function prikazSocial(polje) {
   let id = polje.getAttribute("data-id");
@@ -206,6 +207,7 @@ window.onload = function () {
 
   function prikazProizvoda(data) {
     html = ``;
+    data = pol(data);
     data = filtriranjeBrendova(data);
     data = naciniSortiranja(data);
     data = pretrazi(data);
@@ -260,6 +262,16 @@ window.onload = function () {
     }
   }
 
+  function pol(niz) {
+    var odabraniPol = [];
+    for (let i = 0; i < $(".pol:checked").length; i++) {
+      odabraniPol.push(parseInt($(".pol:checked")[i].value.substring(3)));
+    }
+    if (odabraniPol.length != 0) {
+      return niz.filter((x) => odabraniPol.includes(x.gender));
+    }
+    return niz;
+  }
 
   function filtriranjeBrendova(niz) {
     var odabraniBrendovi = [];

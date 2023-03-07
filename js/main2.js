@@ -65,7 +65,7 @@ window.onload = function () {
   function prikazKategorija(data) {
     let html = ``;
     data.forEach((kategorija) => {
-      let br = 0;
+      let br = 1-1;
       html += `<li class="filter-list"><input class="pixel-radio pixel-checkbox category" type="checkbox" id="category${kategorija.id}" name="category" value="category${kategorija.id}"><label for="${kategorija.name}"> ${kategorija.name} <span>(`;
       for (var i = 0; i < nizProizvoda.length; i++) {
         if (nizProizvoda[i].category == kategorija.id) {
@@ -112,7 +112,9 @@ window.onload = function () {
     });
     nizBrendova = data;
     $("#brendovi").html(html);
+    
   }
+
 
 
   var path = document.location.pathname;
@@ -145,34 +147,7 @@ window.onload = function () {
     });
   }
 
-  function slajder() {
-    if ($(".owl-carousel").length > 0) {
-      $("#bestSellerCarousel").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: true,
-        navText: [
-          "<i class='ti-arrow-left'></i>",
-          "<i class='ti-arrow-right'></i>",
-        ],
-        dots: false,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          900: {
-            items: 3,
-          },
-          1130: {
-            items: 4,
-          },
-        },
-      });
-    }
-  }
+
 
   if (path == "/shop.html") {
     dohvatanjePodataka("../data/proizvodi.json", prikazProizvoda);
@@ -213,8 +188,8 @@ window.onload = function () {
     path == "/single-product.html" ||
     path == "/shop.html" ||
     path == "/checkout.html" ||
-    path == "/login.html" ||
-    path == "/register.html"
+    path == "/" ||
+    path == "/"
   ) {
     dohvatanjePodataka("../data/meni.json", prikazMenija);
   }
@@ -228,13 +203,6 @@ window.onload = function () {
     proveraFormeCheckout();
   }
 
-  if (path == "/login.html") {
-    proveraFormeLogin();
-  }
-
-  if (path == "/register.html") {
-    proveraFormeRegister();
-  }
 
   function prikazProizvoda(data) {
     html = ``;
@@ -387,6 +355,7 @@ window.onload = function () {
             html += `</br>`;
           }
           html += `<h6 class="hidden crveno" id="izaberiVelicinu">SELECT</h6>`;
+          
           html += `</p>`;
           html += `<div class="product_count">
                                 <label for="qty">Quantity:</label>
@@ -607,7 +576,7 @@ window.onload = function () {
         return "Maticna ploca";
         break;
       case 4:
-        return "";
+        return "Jackets";
         break;
       case 5:
         return "Hard disk";
@@ -826,33 +795,7 @@ window.onload = function () {
     }
   }
 
-  function ispisPocetnaSlajder(niz) {
-    html = ``;
 
-    for (let i = 0; i < niz.length; i++) {
-      if (niz[i].inStock && niz[i].sale) {
-        html += `<div class="card text-center card-product">
-            <div class="card-product__img">
-                <a href="pages/single-product.html?id=${niz[i].id}">
-                    <img class="img-fluid" src="${niz[i].img.src}" alt="${
-          niz[i].img.alt
-        }"/>
-                </a>
-            </div>
-            <div class="card-body">
-              <p>${kategorijaProizvoda(niz[i].category)}</p>
-              <h4 class="card-product__title"><a href="pages/single-product.html?id=${
-                niz[i].id
-              }">${niz[i].name}</a></h4>
-              <p class="card-product__price">${niz[i].price.newPrice}$</p>
-            </div>
-          </div>`;
-      }
-    }
-
-    $("#bestSellerCarousel").html(html);
-    slajder();
-  }
 
   function proveraFormeContact() {
     let dugme = document.getElementById("form-submit");
@@ -1083,4 +1026,10 @@ window.onload = function () {
                 }$</span></a></li>`;
     $("#cenaCheckout").html(html);
   }
+
+
+
+
+
+  
 };
